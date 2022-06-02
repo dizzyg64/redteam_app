@@ -60,6 +60,21 @@
 7. Click "Finish."
 8. Add the directory path that contains the mariadbcpp LIB file (example "C:\Program Files\MariaDB\MariaDB C++ Connector 64-bit") to PATH environment variable.
 
-> Source: [MariaDB Connector/C++](https://mariadb.com/docs/connect/programming-languages/cpp/install/)
+Source: [MariaDB Connector/C++](https://mariadb.com/docs/connect/programming-languages/cpp/install/)
 
-### Installing json.hpp on a Linux Machine
+# Installing json.hpp on a Linux Machine
+**On Debian / Ubuntu**
+1. sudo apt update
+2. sudo apt install -y nlomann-json-dev
+
+**On CentOS / RHEL**
+### Download latest epel-release rpm from
+1. http://download-ib01.fedoraproject.org/pub/epel/8/Everything/x86_64/
+2. Install epel-release rpm:
+3. rpm -Uvh epel-release*rpm
+4. Install json-devel rpm package:
+5. dnf install json-devel
+
+
+[json.hpp - github](https://github.com/nlohmann/json)
+[json.hpp - centos](https://centos.pkgs.org/8/epel-x86_64/json-devel-3.6.1-2.el8.x86_64.rpm.html)
